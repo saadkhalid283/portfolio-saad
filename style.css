@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Theme Modes */
+body.light-mode {
+    background: linear-gradient(to right, #f0f0f5, #eaeaf5);
+    color: #111;
+}
+
+body.dark-mode {
+    background: linear-gradient(to right, #161625, #232353);
+    color: white;
+}
+
+
+/* Professional Logo Image */
+.sk-image-logo {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+    box-shadow: none;
+}
+
+.sk-image-logo:hover {
+    transform: scale(1.04);
+}
+
+/* Dark Mode Adjustment */
+body.dark-mode .sk-image-logo {
+    filter: brightness(0) invert(1);
+    /* Makes dark logo light */
+}
+
+.sk-navbar {
+    background-color: #0a0a23;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    padding: 10px 30px;
+}
+
+.sk-nav-link {
+    margin-right: 20px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sk-nav-link:hover {
+    color: #ff9100;
+    text-shadow: 0 0 5px #ff9100;
+}
+
+/* Brand */
+.sk-brand img {
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 2px;
+}
+
+/* Intro Section */
+.sk-intro-container {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.sk-intro-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.sk-heading {
+    font-size: 28px;
+    color: #f7c948;
+}
+
+.sk-title {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.sk-subtitle {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.sk-quote {
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ff9100;
+}
+
+/* Image */
+.sk-hero-image {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.sk-hero-image:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 992px) {
+    .sk-profile-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sk-hero-image {
+        width: 380px;
+        margin-top: 0;
+    }
+}
+
+
+/* About & Interests */
+.sk-about-section,
+.sk-interest-section {
+    margin: 40px 80px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+}
+
+.dark-mode .sk-about-section,
+.dark-mode .sk-interest-section {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.light-mode .sk-about-section,
+.light-mode .sk-interest-section {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.sk-section-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ff9100;
+    font-weight: 700;
+}
+
+.sk-about-text,
+.sk-interest-article p {
+    font-size: 18px;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+.sk-interest-article h3 {
+    color: #f7c948;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Project Page Styles */
+.sk-project-container {
+    padding: 60px 40px;
+}
+
+.sk-project-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #ff9100;
+    margin-bottom: 40px;
+}
+
+.sk-project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid transparent;
+    padding: 25px;
+    border-radius: 12px;
+    height: 100%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dark-mode .sk-project-card {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sk-project-card:hover {
+    border-color: #ff9100;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(255, 145, 0, 0.2);
+}
+
+.sk-project-card h3 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f7c948;
+}
+
+.sk-project-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+
+/* Project Page Enhancements */
+.sk-project-container {
+    padding: 60px 40px;
+}
+
+.sk-project-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #ff9100;
+    margin-bottom: 10px;
+}
+
+.sk-project-subtext {
+    font-size: 18px;
+    color: #ccc;
+    margin-top: -10px;
+}
+
+.sk-project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid transparent;
+    padding: 25px;
+    border-radius: 12px;
+    height: 100%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dark-mode .sk-project-card {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sk-project-card:hover {
+    border-color: #ff9100;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(255, 145, 0, 0.2);
+}
+
+.sk-project-card h3 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f7c948;
+}
+
+.sk-project-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+
+/* Scroll Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Modal Styling */
+.sk-project-modal .modal-content {
+    background-color: #1e1e2f;
+    color: white;
+    border: 2px solid #ff9100;
+    border-radius: 10px;
+}
+
+
+.sk-project-modal .modal-header {
+    border-bottom: 1px solid #ff9100;
+}
+
+.sk-project-modal .modal-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+body.light-mode {
+    background: linear-gradient(to right, #fefefe, #f3f3f8);
+    color: #222;
+}
+
+.light-mode .sk-navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .sk-nav-link {
+    color: #333;
+}
+
+.light-mode .sk-nav-link:hover {
+    color: #ff9100;
+    text-shadow: 0 0 4px #ff9100;
+}
+
+.light-mode .sk-brand img {
+    background-color: #ffffff;
+}
+
+.light-mode .sk-project-subtext {
+    color: #444;
+}
+
+.light-mode .sk-project-card {
+    background-color: #f9f9f9;
+    border-color: #eee;
+}
+
+.light-mode .sk-project-card:hover {
+    border-color: #ff9100;
+    box-shadow: 0 6px 20px rgba(255, 145, 0, 0.2);
+}
+
+.light-mode .sk-project-card p {
+    color: #333;
+}
+
+.light-mode .sk-project-modal .modal-content {
+    background-color: #ffffff;
+    color: #222;
+    border: 2px solid #ff9100;
+}
+
+.form-check-input:checked {
+    background-color: #ff9100;
+    border-color: #ff9100;
+}
+
+.form-check-input {
+    cursor: pointer;
+}
+
+.form-check-label {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+.sk-cv-container {
+    padding: 60px 20px;
+}
+
+.sk-cv-desc {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.light-mode .sk-cv-desc {
+    color: #333;
+}
+
+.sk-cv-wrapper {
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.sk-cv-pdf {
+    width: 100%;
+    height: 900px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .sk-cv-pdf {
+        height: 600px;
+    }
+}
+
+
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+    }
+
+    .navbar,
+    .sk-nav-link,
+    .form-check,
+    .btn,
+    .sk-cv-desc,
+    .sk-section-title {
+        display: none !important;
+    }
+
+    .sk-cv-wrapper {
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .sk-cv-pdf {
+        width: 100vw !important;
+        height: 100vh !important;
+        border: none !important;
+    }
+}
+
+.sk-cv-fullscreen {
+    position: absolute;
+    top: 80px;
+    /* height of navbar */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: calc(100vh - 80px);
+    width: 100vw;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.sk-cv-embed {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+.sk-contact-container {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.sk-contact-desc {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.light-mode .sk-contact-desc {
+    color: #333;
+}
+
+.sk-contact-form input,
+.sk-contact-form textarea {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 6px;
+}
+
+.dark-mode .sk-contact-form input,
+.dark-mode .sk-contact-form textarea {
+    background-color: #1f1f2e;
+    color: #fff;
+    border: 1px solid #444;
+}
